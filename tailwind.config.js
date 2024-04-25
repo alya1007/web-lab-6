@@ -4,8 +4,8 @@ export default {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		fontFamily: {
-			sans: ["Graphik", "sans-serif"],
-			serif: ["Merriweather", "serif"],
+			sans: ["Poppins", "sans-serif"],
+			// serif: ["Merriweather", "serif"],
 		},
 		extend: {
 			spacing: {
@@ -14,6 +14,19 @@ export default {
 			},
 			borderRadius: {
 				"4xl": "2rem",
+			},
+			fontWeight: {
+				thin: 100,
+				light: 300,
+				normal: 400,
+				medium: 500,
+				semibold: 600,
+				bold: 700,
+				extrabold: 800,
+				black: 900,
+			},
+			colors: {
+				primary: "#ef4444",
 			},
 		},
 	},
