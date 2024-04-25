@@ -1,6 +1,7 @@
 import logo from "@/assets/logo.png";
 import Button from "./ui/Button";
 import ThemeSwitch from "./ThemeSwitch";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 	return (
@@ -13,9 +14,15 @@ const Navbar = () => {
 				<ThemeSwitch />
 				<nav>
 					<ul className="flex justify-between gap-4">
-						<li>Home</li>
-						<li>Movies</li>
-						<li>TV Shows</li>
+						<li>
+							<Link to="/">Home</Link>
+						</li>
+						<li>
+							<Link to="/movies">Movies</Link>
+						</li>
+						<li>
+							<Link to="/tv-shows">TV Shows</Link>
+						</li>
 					</ul>
 				</nav>
 				<Button variant={"default"} size="sm">
