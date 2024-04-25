@@ -31,7 +31,7 @@ function ThemeSwitch() {
 			checked={enabled}
 			onChange={handleThemeChange}
 			className={classNames(
-				enabled ? "bg-gray-400" : "bg-yellow-600",
+				enabled ? "bg-ternary" : "bg-primary",
 				"relative inline-flex h-6 w-11 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent transition-colors duration-200 ease-in-out"
 			)}
 		>
@@ -52,9 +52,9 @@ function ThemeSwitch() {
 					aria-hidden="true"
 				>
 					{enabled ? (
-						<SunIcon className="h-3 w-3 text-yellow-600" />
+						<SunIcon className="h-3 w-3 text-primary" />
 					) : (
-						<MoonIcon className="h-3 w-3 text-gray-400" />
+						<MoonIcon className="h-3 w-3 text-ternary" />
 					)}
 				</span>
 				<span
@@ -67,9 +67,9 @@ function ThemeSwitch() {
 					aria-hidden="true"
 				>
 					{enabled ? (
-						<SunIcon className="h-3 w-3 text-yellow-600" />
+						<SunIcon className="h-3 w-3 text-primary" />
 					) : (
-						<MoonIcon className="h-3 w-3 text-gray-400" />
+						<MoonIcon className="h-3 w-3 text-ternary" />
 					)}
 				</span>
 			</span>
