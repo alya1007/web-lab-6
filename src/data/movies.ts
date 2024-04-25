@@ -1,5 +1,13 @@
 export const movies = [
 	{
+		"LandingMoviesImages": [
+			"https://i.ibb.co/v3Yt1dP/thumb-1920-1319314.jpg",
+			"https://i.ibb.co/vYDCsKF/wp13745177-immaculate-movie-wallpapers.jpg",
+			"https://i.ibb.co/6J4nBQg/GKLagm8-Ww-AA3-ZSW.jpg",
+			"https://i.ibb.co/jL52k8z/wp13817583-monkey-man-movie-wallpapers.jpg"
+		]
+	},
+	{
 		"Title": "Avatar",
 		"Year": "2009",
 		"Rated": "PG-13",
