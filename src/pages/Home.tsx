@@ -1,5 +1,11 @@
+import LandingCarousel from "@/components/LandingCarousel";
+
 const Home = () => {
-	return <div>home</div>;
+	return (
+		<>
+			<LandingCarousel />
+		</>
+	);
 };
 
 export default Home;

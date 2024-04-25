@@ -8,7 +8,7 @@ const Navbar = () => {
 	const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
 	return (
-		<div className="flex items-center justify-between text-xs">
+		<div className="flex items-center justify-between text-xs md:px-20 md:py-8 px-6 py-4">
 			<a className="flex justify-between items-center gap-2" href="/">
 				<img src={logo} alt="logo" className="h-10"></img>
 				<h1 className="text-primary uppercase font-medium hidden md:block md:text-base">
