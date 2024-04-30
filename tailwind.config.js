@@ -32,6 +32,7 @@ export default {
 				bgPrimary: "#1c1917",
 				bgSecondary: "#272320",
 				bgTernary: "#2f2c2a",
+				bgPrimaryWhite: "#f9f9f9",
 			},
 		},
 	},
