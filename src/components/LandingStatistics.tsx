@@ -2,9 +2,15 @@ import camera from "@/assets/camera.png";
 import reel from "@/assets/reel.png";
 import reels from "@/assets/reels.png";
 
-const LandingStatistics = () => {
+type LandingStatisticsProps = {
+	className?: string;
+};
+
+const LandingStatistics = ({ className }: LandingStatisticsProps) => {
 	return (
-		<div className="bg-white/10 flex flex-shrink-0 flex-col gap-6 relative">
+		<div
+			className={` bg-white/10 flex-shrink-0 flex-col gap-6 relative ${className} mx-auto mt-12 md:m-0 w-64 md:w-72`}
+		>
 			<div className="flex h-12 flex-shrink-0 items-center mx-14 mt-10 text-sm font-extralight gap-5">
 				<img className="h-full" src={camera} alt="camera icon" />
 				<div>

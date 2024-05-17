@@ -11,12 +11,12 @@ const buttonVariants = cva(
 			variant: {
 				default: "bg-primary text-white hover:bg-secondary",
 				ghost:
-					"bg-transparent border-solid border-2 border-primary hover:text-slate-900 hover:bg-slate-200",
+					"bg-transparent border-solid border-2 border-primary hover:bg-white/30",
 			},
 			size: {
-				default: "h-10 py-2 px-8",
-				sm: "h-9 px-6",
-				lg: "h-11 px-10",
+				default: "h-10 py-1 px-10",
+				sm: "h-9 px-5",
+				lg: "h-11 px-12",
 			},
 		},
 		defaultVariants: {
