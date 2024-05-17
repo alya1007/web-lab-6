@@ -1,6 +1,6 @@
-import camera from "@/assets/camera.png";
-import reel from "@/assets/reel.png";
-import reels from "@/assets/reels.png";
+import camera from "@/assets/statistics/camera.png";
+import reel from "@/assets/statistics/reel.png";
+import reels from "@/assets/statistics/reels.png";
 
 type LandingStatisticsProps = {
 	className?: string;
