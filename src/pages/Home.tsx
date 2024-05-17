@@ -1,5 +1,5 @@
-import LandingCarousel from "@/components/LandingCarousel";
-import LandingStatistics from "@/components/LandingStatistics";
+import LandingCarousel from "@/components/landing/LandingCarousel";
+import LandingStatistics from "@/components/landing/LandingStatistics";
 
 const Home = () => {
 	return (

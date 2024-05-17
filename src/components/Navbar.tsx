@@ -1,6 +1,6 @@
 import logo from "@/assets/logo.png";
 import Button from "./ui/Button";
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "./ui/ThemeSwitch";
 import { Link } from "react-router-dom";
 import { useState } from "react"; // import state
 

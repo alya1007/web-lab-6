@@ -1,5 +1,5 @@
 import LandingStatistics from "./LandingStatistics";
-import Button from "./ui/Button";
+import Button from "../ui/Button";
 
 const LandingContent = () => {
 	return (
