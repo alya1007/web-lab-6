@@ -41,8 +41,8 @@ const LandingCarousel = () => {
 					))}
 				</TECarousel>
 				<div className="absolute inset-0 flex">
-					<div className="absolute top-0 dark:top-[100px] md:dark:top-[200px] bottom-0 left-0 right-0 bg-gradient-to-b from-transparent to-bgPrimaryWhite dark:to-bgPrimary opacity-100 blur-[0px]"></div>
-					<div className="absolute top-0 dark:bottom-[100px] md:dark:bottom-[200px] left-0 right-0 bg-gradient-to-t from-transparent to-bgPrimaryWhite dark:to-bgPrimary opacity-100 blur-[0px]"></div>
+					<div className="absolute top-0 dark:top-[100px] md:dark:top-[200px] bottom-0 left-0 right-0 dark:bg-gradient-to-b from-transparent to-bgPrimaryWhite dark:to-bgPrimary opacity-100 blur-[0px]"></div>
+					<div className="absolute top-0 dark:bottom-[100px] md:dark:bottom-[200px] left-0 right-0 dark:bg-gradient-to-t from-transparent to-bgPrimaryWhite dark:to-bgPrimary opacity-100 blur-[0px]"></div>
 					<LandingContent />
 				</div>
 			</div>

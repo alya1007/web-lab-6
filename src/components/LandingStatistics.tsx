@@ -9,7 +9,7 @@ type LandingStatisticsProps = {
 const LandingStatistics = ({ className }: LandingStatisticsProps) => {
 	return (
 		<div
-			className={` bg-white/10 flex-shrink-0 flex-col gap-6 relative ${className} mx-auto mt-12 md:m-0 w-64 md:w-72`}
+			className={`text-white bg-bgPrimary sm:bg-white/20 dark:bg-white/10 flex-shrink-0 flex-col gap-6 relative ${className} mx-auto mt-12 md:m-0 w-64 md:w-72`}
 		>
 			<div className="flex h-12 flex-shrink-0 items-center mx-14 mt-10 text-sm font-extralight gap-5">
 				<img className="h-full" src={camera} alt="camera icon" />
@@ -31,10 +31,10 @@ const LandingStatistics = ({ className }: LandingStatisticsProps) => {
 					<h6>Series Series</h6>
 				</div>
 			</div>
-			<div className="h-[2.5px] rounded-md absolute top-5 right-10 bg-primary/60 w-full"></div>
-			<div className="h-full rounded-md absolute bottom-5 left-5 bg-primary/60 w-[2.5px]"></div>
-			<div className="h-full rounded-md absolute top-8 right-5 bg-primary/60 w-[2.5px]"></div>
-			<div className="h-[2.5px] rounded-md absolute top-[277px] left-5 bg-primary/60 w-full"></div>
+			<div className="h-[2.5px] rounded-md absolute top-5 right-10 bg-primary sm:bg-primary/60 dark:bg-primary/60 w-full"></div>
+			<div className="h-full rounded-md absolute bottom-5 left-5 bg-primary sm:bg-primary/60 dark:bg-primary/60 w-[2.5px]"></div>
+			<div className="h-full rounded-md absolute top-8 right-5 bg-primary sm:bg-primary/60 dark:bg-primary/60 w-[2.5px]"></div>
+			<div className="h-[2.5px] rounded-md absolute top-[277px] left-5 bg-primary sm:bg-primary/60 dark:bg-primary/60 w-full"></div>
 		</div>
 	);
 };
