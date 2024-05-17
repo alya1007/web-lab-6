@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 
 const LandingContent = () => {
 	return (
-		<div className="absolute z-2 flex justify-between w-full px-16 m-auto self-center">
+		<div className="absolute text-white z-2 flex justify-between w-full px-16 m-auto self-center">
 			<div className="flex flex-col items-center sm:items-start w-full lg:gap-4">
 				<h1 className="md:w-80 lg:w-96 text-[1.4rem] md:text-4xl lg:text-5xl font-semibold text-center md:text-left md:mt-20 lg:mt-0 m-0 mb-2 md:mb-0 leading-6 md:leading-8">
 					Let's Make Your Own Cinema
