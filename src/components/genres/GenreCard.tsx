@@ -3,8 +3,8 @@ import rightArrow from "@/assets/rightArrow.png";
 
 const GenreCard = ({ genre }: { genre: Genre }) => {
 	return (
-		<div className="bg-bgSecondary rounded-lg flex items-center">
-			<div className="bg-bgPrimary md:m-4 lg:m-5 rounded-lg p-3 md:w-14 lg:w-16 m-5 w-14">
+		<div className="bg-bgSecondary/20 dark:bg-bgSecondary rounded-lg flex items-center">
+			<div className="bg-bgPrimaryWhite dark:bg-bgPrimary md:m-4 lg:m-5 rounded-lg p-3 md:w-14 lg:w-16 m-5 w-14">
 				<img src={genre.icon} />
 			</div>
 			<div className="flex flex-col flex-grow justify-center">
