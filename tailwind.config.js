@@ -33,6 +33,8 @@ export default {
 				bgSecondary: "#272320",
 				bgTernary: "#2f2c2a",
 				bgPrimaryWhite: "#f9f9f9",
+				bgSecondaryWhite: "#cfcecd",
+				hoverWhite: "#bebdbb",
 			},
 		},
 	},
