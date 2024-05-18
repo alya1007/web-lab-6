@@ -10,15 +10,17 @@ import {
 const FilterBar = () => {
 	const filters: Filter[] = JSON.parse(localStorage.getItem("filters") || "[]");
 	return (
-		<div className="mt-14 grid bg-bgSecondaryWhite dark:bg-bgSecondary w-10/12 mx-auto rounded-lg py-4 px-28 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+		<div className="mt-14 grid bg-bgSecondaryWhite dark:bg-bgSecondary w-9/12 sm:w-10/12 mx-auto rounded-lg py-4 px-5 xl:px-28 gap-4 min-[560px]:grid-cols-2 lg:grid-cols-4">
 			{filters.map((filter) => (
 				<TEDropdown className="flex justify-center w-full " key={filter.id}>
 					<TEDropdownToggle className="hover:bg-hoverWhite bg-bgPrimaryWhite dark:hover:bg-bgPrimary transition-all duration-200 flex dark:bg-bgTernary rounded-lg py-1 px-3 items-center gap-2 whitespace-nowrap">
-						<div className="flex-[20%]">
+						<div className="flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] lg:flex-[20%] min-[560px]:h-[50px]">
 							<img src={filter.icon} alt={filter.name} />
 						</div>
-						<h1 className="flex-[65%] text-sm">Sort by {filter.name}</h1>
-						<div className="flex-[15%]">
+						<h1 className="flex-[70%] min-[400px]:flex-[90%] min-[450px]:flex-[76%] md:flex-[80%] lg:flex-[65%] text-sm min-[450px]:text-lg lg:text-sm">
+							Sort by {filter.name}
+						</h1>
+						<div className="flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] lg:flex-[15%]">
 							<img src={dropdownArrow} alt="dropdown arrow" />
 						</div>
 					</TEDropdownToggle>
