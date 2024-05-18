@@ -14,13 +14,13 @@ const FilterBar = () => {
 			{filters.map((filter) => (
 				<TEDropdown className="flex justify-center w-full " key={filter.id}>
 					<TEDropdownToggle className="hover:bg-hoverWhite bg-bgPrimaryWhite dark:hover:bg-bgPrimary transition-all duration-200 flex dark:bg-bgTernary rounded-lg py-1 px-3 items-center gap-2 whitespace-nowrap">
-						<div className="flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] lg:flex-[20%] min-[560px]:h-[50px]">
+						<div className="flex items-center justify-center flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] m-0 lg:flex-[15%] min-[560px]:h-[50px]">
 							<img src={filter.icon} alt={filter.name} />
 						</div>
-						<h1 className="flex-[70%] min-[400px]:flex-[90%] min-[450px]:flex-[76%] md:flex-[80%] lg:flex-[65%] text-sm min-[450px]:text-lg lg:text-sm">
+						<h1 className="flex-[70%] min-[400px]:flex-[90%] min-[450px]:flex-[76%] md:flex-[80%] lg:flex-[75%] %] m-0 text-sm min-[450px]:text-base lg:text-sm">
 							Sort by {filter.name}
 						</h1>
-						<div className="flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] lg:flex-[15%]">
+						<div className="flex-[15%] min-[400px]:flex-[5%] min-[450px]:flex-[12%] md:flex-[10%] m-0 lg:flex-[10%] ">
 							<img src={dropdownArrow} alt="dropdown arrow" />
 						</div>
 					</TEDropdownToggle>
