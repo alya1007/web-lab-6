@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar";
 import { landingMoviesImages, movies } from "./data/movies";
 import { genres } from "./data/genres";
+import filters from "./data/filters";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
 		JSON.stringify(landingMoviesImages)
 	);
 	localStorage.setItem("genres", JSON.stringify(genres));
+	localStorage.setItem("filters", JSON.stringify(filters));
 
 	return (
 		<BrowserRouter>

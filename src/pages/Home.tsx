@@ -1,3 +1,4 @@
+import FilterBar from "@/components/filter/FiltersBar";
 import Genres from "@/components/genres/Genres";
 import LandingCarousel from "@/components/landing/LandingCarousel";
 import LandingStatistics from "@/components/landing/LandingStatistics";
@@ -8,6 +9,7 @@ const Home = () => {
 			<LandingCarousel />
 			<LandingStatistics className="flex sm:hidden" />
 			<Genres />
+			<FilterBar />
 		</>
 	);
 };
