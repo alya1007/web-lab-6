@@ -3,8 +3,27 @@ import "react-multi-carousel/lib/styles.css";
 import CarouselArrows from "./CarouselArrows";
 import { Movie } from "@/data/movies";
 import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
 
 const HotSection = () => {
+	const [hotMovies, setHotMovies] = useState<Movie[]>([]);
+
+	useEffect(() => {
+		const storedMovies = localStorage.getItem("movies");
+		if (storedMovies) {
+			try {
+				const movies: Movie[] = JSON.parse(storedMovies);
+				const hotMovies = movies
+					.filter((movie) => movie.type === "movie")
+					.sort((a, b) => parseInt(b.year) - parseInt(a.year))
+					.slice(0, 7);
+				setHotMovies(hotMovies);
+			} catch (error) {
+				console.error("Error parsing movies from localStorage", error);
+			}
+		}
+	}, []);
+
 	const responsive = {
 		superLargeDesktop: {
 			breakpoint: { max: 4000, min: 3000 },
@@ -23,16 +42,6 @@ const HotSection = () => {
 			items: 1,
 		},
 	};
-	const movies: Movie[] = JSON.parse(localStorage.getItem("movies") || "[]");
-	const [hotMovies, setHotMovies] = useState<Movie[]>([]);
-
-	useEffect(() => {
-		const hotMovies = movies
-			.filter((movie) => movie.type === "movie")
-			.sort((a, b) => parseInt(b.year) - parseInt(a.year))
-			.slice(0, 7);
-		setHotMovies(hotMovies);
-	}, [movies]);
 
 	return (
 		<div className="w-10/12 mx-auto mt-10">
@@ -45,19 +54,7 @@ const HotSection = () => {
 					customButtonGroup={<CarouselArrows />}
 				>
 					{hotMovies.map((movie) => (
-						<a
-							key={movie.id}
-							className="bg-cover bg-no-repeat h-56 m-5 rounded-lg p-3 flex flex-col justify-between"
-							style={{ backgroundImage: `url('${movie.poster}')` }}
-							href="#"
-						>
-							<h3 className="bg-bgPrimary/60 px-4 py-1 w-fit rounded-lg">
-								{movie.year}
-							</h3>
-							<h3 className="bg-bgPrimary/60 px-4 py-1 w-fit rounded-lg">
-								{movie.title}
-							</h3>
-						</a>
+						<MovieCard key={movie.id} movie={movie} />
 					))}
 				</Carousel>
 			</div>
