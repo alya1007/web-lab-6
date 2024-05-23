@@ -9,8 +9,8 @@ const Footer: React.FC = () => {
 	return (
 		<footer className="bg-[#101010] text-white py-8 mt-20">
 			<div className="container mx-auto px-4">
-				<div className="w-full flex justify-center gap-24 mx-auto px-20">
-					<div className=" mb-6 md:mb-0">
+				<div className="w-full flex flex-col md:flex-row justify-center gap-6 md:gap-10 lg:gap-24 mx-auto px-10 text-center md:text-start lg:px-20">
+					<div>
 						<h2 className="text-sm text-primary mb-2 font-semibold">
 							Contact Us
 						</h2>
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 							Address: 123 Movie St, Film City, CA 12345
 						</p>
 					</div>
-					<div className=" mb-6 md:mb-0">
+					<div>
 						<h2 className="text-sm text-primary mb-2 font-semibold">
 							Quick Links
 						</h2>
@@ -79,7 +79,7 @@ const Footer: React.FC = () => {
 							<h2 className="text-sm text-primary mb-2 font-semibold">
 								Get In Touch
 							</h2>
-							<div className="flex space-x-4">
+							<div className="flex space-x-4 items-center justify-center md:justify-start">
 								<a
 									href="https://facebook.com"
 									className="text-white hover:text-gray-400"
@@ -106,7 +106,7 @@ const Footer: React.FC = () => {
 								</a>
 							</div>
 						</div>
-						<div className="text-sm">
+						<div className="text-sm mt-10 md:mt-0">
 							<p>&copy; 2024 Movie Database. All rights reserved.</p>
 						</div>
 					</div>
