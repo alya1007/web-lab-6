@@ -32,7 +32,7 @@ const HotSection = () => {
 			.sort((a, b) => parseInt(b.year) - parseInt(a.year))
 			.slice(0, 7);
 		setHotMovies(hotMovies);
-	}, []);
+	}, [movies]);
 
 	return (
 		<div className="w-10/12 mx-auto mt-10">
