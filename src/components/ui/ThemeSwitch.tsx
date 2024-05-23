@@ -9,7 +9,7 @@ function classNames(...classes: string[]) {
 }
 
 function ThemeSwitch() {
-	const [theme, setTheme] = useLocalStorage("theme", "light");
+	const [theme, setTheme] = useLocalStorage("theme", "dark");
 
 	useEffect(() => {
 		const htmlSelector = document.querySelector("html");

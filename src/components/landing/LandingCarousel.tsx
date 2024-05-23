@@ -11,12 +11,12 @@ const LandingCarousel = () => {
 		? JSON.parse(localStorage.getItem("landingMoviesImages") as string)
 		: [];
 
-	// useEffect(() => {
-	// 	const intervalId = setInterval(() => {
-	// 		setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-	// 	}, 5000);
-	// 	return () => clearInterval(intervalId);
-	// }, [images.length]);
+	useEffect(() => {
+		const intervalId = setInterval(() => {
+			setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+		}, 5000);
+		return () => clearInterval(intervalId);
+	}, [images.length]);
 
 	return (
 		<>

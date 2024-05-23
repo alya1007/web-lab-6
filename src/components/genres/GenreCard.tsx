@@ -3,7 +3,7 @@ import rightArrow from "@/assets/rightArrow.png";
 
 const GenreCard = ({ genre }: { genre: Genre }) => {
 	return (
-		<div className="bg-bgSecondary/20 dark:bg-bgSecondary rounded-lg flex items-center">
+		<div className="hover:bg-hoverWhite dark:hover:bg-bgTernary ease-in-out transition duration-300 bg-bgSecondary/20 dark:bg-bgSecondary rounded-lg flex items-center hover:cursor-pointer ">
 			<div className="bg-bgPrimaryWhite dark:bg-bgPrimary md:m-4 lg:m-5 rounded-lg p-3 md:w-14 lg:w-16 m-5 w-14">
 				<img src={genre.icon} />
 			</div>
