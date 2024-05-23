@@ -1,5 +1,3 @@
-import { v4 as uuidv4 } from 'uuid';
-
 export const landingMoviesImages = [
 	"https://i.ibb.co/D7TS2wQ/dune.jpg",
 	"https://i.ibb.co/SBBQywC/joker2.jpg",
@@ -10,12 +8,12 @@ export type LandingMoviesImages = typeof landingMoviesImages;
 
 export const movies: Movie[] = [
 	{
-		id: uuidv4(),
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837427b1e8d46-f358-4c4f-8f10-8eb6c991e2b6",
 		title: "Avatar",
 		year: "2009",
 		rated: "PG-13",
 		released: "18 Dec 2009",
-		runtime: "162 min",
+		runtime: 162,
 		genre: "Action, Adventure, Fantasy",
 		director: "James Cameron",
 		writer: "James Cameron",
@@ -26,12 +24,11 @@ export const movies: Movie[] = [
 		awards: "Won 3 Oscars. Another 80 wins & 121 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTYwOTEwNjAzMl5BMl5BanBnXkFtZTcwODc5MTUwMw@@._V1_SX300.jpg",
-		metascore: "83",
-		imdbRating: "7.9",
-		imdbVotes: "890,617",
+		metascore: 83,
+		imdbRating: 7.9,
+		imdbVotes: 890617,
 		imdbID: "tt0499549",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyOTYyMzUxNl5BMl5BanBnXkFtZTcwNTg0MTUzNA@@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNzM2MDk3MTcyMV5BMl5BanBnXkFtZTcwNjg0MTUzNA@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -41,12 +38,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837426e2c4d13-72c4-45b3-84cf-9a2b896cae9d",
 		title: "I Am Legend",
 		year: "2007",
 		rated: "PG-13",
 		released: "14 Dec 2007",
-		runtime: "101 min",
+		runtime: 101,
 		genre: "Drama, Horror, Sci-Fi",
 		director: "Francis Lawrence",
 		writer:
@@ -59,12 +56,11 @@ export const movies: Movie[] = [
 		awards: "9 wins & 21 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTU4NzMyNDk1OV5BMl5BanBnXkFtZTcwOTEwMzU1MQ@@._V1_SX300.jpg",
-		metascore: "65",
-		imdbRating: "7.2",
-		imdbVotes: "533,874",
+		metascore: 65,
+		imdbRating: 7.2,
+		imdbVotes: 33874,
 		imdbID: "tt0480249",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTI0NTI4NjE3NV5BMl5BanBnXkFtZTYwMDA0Nzc4._V1_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTIwMDg2MDU4M15BMl5BanBnXkFtZTYwMTA0Nzc4._V1_.jpg",
@@ -73,13 +69,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837424ae5b4f4-5e5d-4d8f-9229-34c0e9a08df2",
 		title: "300",
 		year: "2006",
 		rated: "R",
 		released: "09 Mar 2007",
-		runtime: "117 min",
+		runtime: 117,
 		genre: "Action, Drama, Fantasy",
 		director: "Zack Snyder",
 		writer:
@@ -91,12 +86,11 @@ export const movies: Movie[] = [
 		awards: "16 wins & 42 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMjAzNTkzNjcxNl5BMl5BanBnXkFtZTYwNDA4NjE3._V1_SX300.jpg",
-		metascore: "52",
-		imdbRating: "7.7",
-		imdbVotes: "611,046",
+		metascore: 52,
+		imdbRating: 7.7,
+		imdbVotes: 611046,
 		imdbID: "tt0416449",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTMwNTg5MzMwMV5BMl5BanBnXkFtZTcwMzA2NTIyMw@@._V1_SX1777_CR0,0,1777,937_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQwNTgyNTMzNF5BMl5BanBnXkFtZTcwNDA2NTIyMw@@._V1_SX1777_CR0,0,1777,935_AL_.jpg",
@@ -104,13 +98,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc83742986d682e-d9a5-47f0-9b7f-e0f8b4ddc2f4",
 		title: "The Avengers",
 		year: "2012",
 		rated: "PG-13",
 		released: "04 May 2012",
-		runtime: "143 min",
+		runtime: 143,
 		genre: "Action, Sci-Fi, Thriller",
 		director: "Joss Whedon",
 		writer: "Joss Whedon (screenplay), Zak Penn (story), Joss Whedon (story)",
@@ -121,12 +114,11 @@ export const movies: Movie[] = [
 		awards: "Nominated for 1 Oscar. Another 34 wins & 75 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTk2NTI1MTU4N15BMl5BanBnXkFtZTcwODg0OTY0Nw@@._V1_SX300.jpg",
-		metascore: "69",
-		imdbRating: "8.1",
-		imdbVotes: "1,003,301",
+		metascore: 69,
+		imdbRating: 8.1,
+		imdbVotes: 1003301,
 		imdbID: "tt0848228",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTA0NjY0NzE4OTReQTJeQWpwZ15BbWU3MDczODg2Nzc@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE1MzEzMjcyM15BMl5BanBnXkFtZTcwNDM4ODY3Nw@@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -136,13 +128,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837425e982da5-928c-4746-943b-f36e0e55e80c",
 		title: "The Wolf of Wall Street",
 		year: "2013",
 		rated: "R",
 		released: "25 Dec 2013",
-		runtime: "180 min",
+		runtime: 180,
 		genre: "Biography, Comedy, Crime",
 		director: "Martin Scorsese",
 		writer: "Terence Winter (screenplay), Jordan Belfort (book)",
@@ -153,12 +144,11 @@ export const movies: Movie[] = [
 		awards: "Nominated for 5 Oscars. Another 35 wins & 154 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMjIxMjgxNTk0MF5BMl5BanBnXkFtZTgwNjIyOTg2MDE@._V1_SX300.jpg",
-		metascore: "75",
-		imdbRating: "8.2",
-		imdbVotes: "786,985",
+		metascore: 75,
+		imdbRating: 8.2,
+		imdbVotes: 86985,
 		imdbID: "tt0993846",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNDIwMDIxNzk3Ml5BMl5BanBnXkFtZTgwMTg0MzQ4MDE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTc0NzAxODAyMl5BMl5BanBnXkFtZTgwMDg0MzQ4MDE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
@@ -168,13 +158,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837420d537f0f-5b0b-4dd8-82e7-1d9b7ed28226",
 		title: "Interstellar",
 		year: "2014",
 		rated: "PG-13",
 		released: "07 Nov 2014",
-		runtime: "169 min",
+		runtime: 169,
 		genre: "Adventure, Drama, Sci-Fi",
 		director: "Christopher Nolan",
 		writer: "Jonathan Nolan, Christopher Nolan",
@@ -185,12 +174,11 @@ export const movies: Movie[] = [
 		awards: "Won 1 Oscar. Another 39 wins & 134 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMjIxNTU4MzY4MF5BMl5BanBnXkFtZTgwMzM4ODI3MjE@._V1_SX300.jpg",
-		metascore: "74",
-		imdbRating: "8.6",
-		imdbVotes: "937,412",
+		metascore: 74,
+		imdbRating: 8.6,
+		imdbVotes: 937412,
 		imdbID: "tt0816692",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA3NTEwOTMxMV5BMl5BanBnXkFtZTgwMjMyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMzQ5ODE2MzEwM15BMl5BanBnXkFtZTgwMTMyODgxMzE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
@@ -200,15 +188,13 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837429673a51d-3f45-4c6b-b56e-00ae2d0fa9f8",
 		title: "Game of Thrones",
 		year: "2011–",
 		rated: "TV-MA",
 		released: "17 Apr 2011",
-		runtime: "56 min",
+		runtime: 56,
 		genre: "Adventure, Drama, Fantasy",
-		director: "N/A",
 		writer: "David Benioff, D.B. Weiss",
 		actors: "Peter Dinklage, Lena Headey, Emilia Clarke, Kit Harington",
 		plot: "While a civil war brews between several noble families in Westeros, the children of the former rulers of the land attempt to rise up to power. Meanwhile a forgotten race, bent on destruction, plans to return after thousands of years in the North.",
@@ -217,13 +203,11 @@ export const movies: Movie[] = [
 		awards: "Won 1 Golden Globe. Another 185 wins & 334 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMjM5OTQ1MTY5Nl5BMl5BanBnXkFtZTgwMjM3NzMxODE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "9.5",
-		imdbVotes: "1,046,830",
+		imdbRating: 9.5,
+		imdbVotes: 1046830,
 		imdbID: "tt0944947",
 		type: "series",
-		totalSeasons: "7",
-		response: "True",
+		totalSeasons: 7,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNDc1MGUyNzItNWRkOC00MjM1LWJjNjMtZTZlYWIxMGRmYzVlXkEyXkFqcGdeQXVyMzU3MDEyNjk@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BZjZkN2M5ODgtMjQ2OC00ZjAxLWE1MjMtZDE0OTNmNGM0NWEwXkEyXkFqcGdeQXVyNjUxNzgwNTE@._V1_SX1777_CR0,0,1777,999_AL_.jpg",
@@ -233,15 +217,13 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc837424c44aaff-7324-45a3-9ff5-7c55d44e8d6d",
 		title: "Vikings",
 		year: "2013–",
 		rated: "TV-14",
 		released: "03 Mar 2013",
-		runtime: "44 min",
+		runtime: 44,
 		genre: "Action, Drama, History",
-		director: "N/A",
 		writer: "Michael Hirst",
 		actors: "Travis Fimmel, Clive Standen, Gustaf Skarsgård, Katheryn Winnick",
 		plot: "The world of the Vikings is brought to life through the journey of Ragnar Lothbrok, the first Viking to emerge from Norse legend and onto the pages of history - a man on the edge of myth.",
@@ -251,13 +233,11 @@ export const movies: Movie[] = [
 			"Nominated for 7 Primetime Emmys. Another 17 wins & 49 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BOTEzNzI3MDc0N15BMl5BanBnXkFtZTgwMzk1MzA5NzE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "8.6",
-		imdbVotes: "198,041",
+		imdbRating: 8.6,
+		imdbVotes: 198041,
 		imdbID: "tt2306299",
 		type: "series",
-		totalSeasons: "5",
-		response: "True",
+		totalSeasons: 5,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjM5MTM1ODUxNV5BMl5BanBnXkFtZTgwNTAzOTI2ODE@._V1_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNzU2NDcxODMyOF5BMl5BanBnXkFtZTgwNDAzOTI2ODE@._V1_.jpg",
@@ -267,15 +247,13 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc8374282e6e8d3-fcf0-44fa-89eb-2388ffb03048",
 		title: "Gotham",
 		year: "2014–",
 		rated: "TV-14",
 		released: "01 Aug 2014",
-		runtime: "42 min",
+		runtime: 42,
 		genre: "Action, Crime, Drama",
-		director: "N/A",
 		writer: "Bruno Heller",
 		actors: "Ben McKenzie, Donal Logue, David Mazouz, Sean Pertwee",
 		plot: "The story behind Detective James Gordon's rise to prominence in Gotham City in the years before Batman's arrival.",
@@ -284,13 +262,11 @@ export const movies: Movie[] = [
 		awards: "Nominated for 4 Primetime Emmys. Another 3 wins & 22 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTY2MjMwNDE4OV5BMl5BanBnXkFtZTgwNjI1NjU0OTE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "8.0",
-		imdbVotes: "133,375",
+		imdbRating: 8.0,
+		imdbVotes: 133375,
 		imdbID: "tt3749900",
 		type: "series",
-		totalSeasons: "3",
-		response: "True",
+		totalSeasons: 3,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNDI3ODYyODY4OV5BMl5BanBnXkFtZTgwNjE5NDMwMDI@._V1_SY1000_SX1500_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjA5OTExMTIwNF5BMl5BanBnXkFtZTgwMjI5NDMwMDI@._V1_SY1000_SX1500_AL_.jpg",
@@ -300,15 +276,12 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "d66e3f9a-5fa3-47f6-9b88-5b6d8bc83742",
 		title: "Power",
 		year: "2014–",
 		rated: "TV-MA",
-		released: "N/A",
-		runtime: "50 min",
+		runtime: 50,
 		genre: "Crime, Drama",
-		director: "N/A",
 		writer: "Courtney Kemp Agboh",
 		actors: "Omari Hardwick, Joseph Sikora, Andy Bean, Lela Loren",
 		plot: 'James "Ghost" St. Patrick, a wealthy New York night club owner who has it all, catering for the city\'s elite and dreaming big, lives a double life as a drug kingpin.',
@@ -317,13 +290,11 @@ export const movies: Movie[] = [
 		awards: "1 win & 6 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BOTA4NTkzMjUzOF5BMl5BanBnXkFtZTgwNzg5ODkxOTE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "8.0",
-		imdbVotes: "14,770",
+		imdbRating: 8.0,
+		imdbVotes: 14770,
 		imdbID: "tt3281796",
 		type: "series",
-		totalSeasons: "3",
-		response: "True",
+		totalSeasons: 3,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTc2ODg0MzMzM15BMl5BanBnXkFtZTgwODYxODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTcyMjA0MzczNV5BMl5BanBnXkFtZTgwNTIyODA5NTE@._V1_SY1000_SX1500_AL_.jpg",
@@ -333,15 +304,13 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "3b06dbe1-4133-4f1b-85d0-f1c7c09b5a13",
 		title: "Narcos",
 		year: "2015–",
 		rated: "TV-MA",
 		released: "28 Aug 2015",
-		runtime: "49 min",
+		runtime: 49,
 		genre: "Biography, Crime, Drama",
-		director: "N/A",
 		writer: "Carlo Bernard, Chris Brancato, Doug Miro, Paul Eckstein",
 		actors: "Wagner Moura, Boyd Holbrook, Pedro Pascal, Joanna Christie",
 		plot: "A chronicled look at the criminal exploits of Colombian drug lord Pablo Escobar.",
@@ -350,13 +319,11 @@ export const movies: Movie[] = [
 		awards: "Nominated for 2 Golden Globes. Another 4 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTU0ODQ4NDg2OF5BMl5BanBnXkFtZTgwNzczNTE4OTE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "8.9",
-		imdbVotes: "118,680",
+		imdbRating: 8.9,
+		imdbVotes: 118680,
 		imdbID: "tt2707408",
 		type: "series",
-		totalSeasons: "2",
-		response: "True",
+		totalSeasons: 2,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTk2MDMzMTc0MF5BMl5BanBnXkFtZTgwMTAyMzA1OTE@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjIxMDkyOTEyNV5BMl5BanBnXkFtZTgwNjY3Mjc3OTE@._V1_SY1000_SX1500_AL_.jpg",
@@ -366,15 +333,13 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "97d06080-f4c4-489b-a645-cdc0b3c40db4",
 		title: "Breaking Bad",
 		year: "2008–2013",
 		rated: "TV-14",
 		released: "20 Jan 2008",
-		runtime: "49 min",
+		runtime: 49,
 		genre: "Crime, Drama, Thriller",
-		director: "N/A",
 		writer: "Vince Gilligan",
 		actors: "Bryan Cranston, Anna Gunn, Aaron Paul, Dean Norris",
 		plot: "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's financial future.",
@@ -383,13 +348,11 @@ export const movies: Movie[] = [
 		awards: "Won 2 Golden Globes. Another 132 wins & 218 nominations.",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTQ0ODYzODc0OV5BMl5BanBnXkFtZTgwMDk3OTcyMDE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "9.5",
-		imdbVotes: "889,883",
+		imdbRating: 9.5,
+		imdbVotes: 889883,
 		imdbID: "tt0903747",
 		type: "series",
-		totalSeasons: "5",
-		response: "True",
+		totalSeasons: 5,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTgyMzI5NDc5Nl5BMl5BanBnXkFtZTgwMjM0MTI2MDE@._V1_SY1000_CR0,0,1498,1000_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ2NDkwNDk5NV5BMl5BanBnXkFtZTgwNDM0MTI2MDE@._V1_SY1000_CR0,0,1495,1000_AL_.jpg",
@@ -399,14 +362,11 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "5b23d9de-8775-4c85-8eb0-2de28949f4c1",
 		comingSoon: true,
 		title: "Doctor Strange",
 		year: "2016",
-		rated: "N/A",
 		released: "04 Nov 2016",
-		runtime: "N/A",
 		genre: "Action, Adventure, Fantasy",
 		director: "Scott Derrickson",
 		writer:
@@ -416,15 +376,10 @@ export const movies: Movie[] = [
 		plot: "After his career is destroyed, a brilliant but arrogant and conceited surgeon gets a new lease on life when a sorcerer takes him under her wing and trains him to defend the world against evil.",
 		language: "English",
 		country: "USA",
-		awards: "N/A",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BNjgwNzAzNjk1Nl5BMl5BanBnXkFtZTgwMzQ2NjI1OTE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "N/A",
-		imdbVotes: "N/A",
 		imdbID: "tt1211837",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjM3ODc1ODI5Ml5BMl5BanBnXkFtZTgwODMzMDY3OTE@._V1_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTgxNTAyNTU0NV5BMl5BanBnXkFtZTgwNzMzMDY3OTE@._V1_.jpg",
@@ -432,14 +387,11 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "5e9c9051-365d-4cb7-9b95-b6ffdc2915ec",
 		comingSoon: true,
 		title: "Rogue One: A Star Wars Story",
 		year: "2016",
-		rated: "N/A",
 		released: "16 Dec 2016",
-		runtime: "N/A",
 		genre: "Action, Adventure, Sci-Fi",
 		director: "Gareth Edwards",
 		writer:
@@ -451,12 +403,8 @@ export const movies: Movie[] = [
 		awards: "1 nomination.",
 		poster:
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjQyMzI2OTA3OF5BMl5BanBnXkFtZTgwNDg5NjQ0OTE@._V1_SY1000_CR0,0,674,1000_AL_.jpg",
-		metascore: "N/A",
-		imdbRating: "N/A",
-		imdbVotes: "N/A",
 		imdbID: "tt3748528",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjE3MzA4Nzk3NV5BMl5BanBnXkFtZTgwNjAxMTc1ODE@._V1_SX1777_CR0,0,1777,744_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BNDMxMTQzMjQxM15BMl5BanBnXkFtZTgwNzAxMTc1ODE@._V1_SX1777_CR0,0,1777,744_AL_.jpg",
@@ -466,14 +414,11 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "2192ffb7-d32f-4e68-98cc-df3b8e24f47c",
 		comingSoon: true,
 		title: "Assassin's Creed",
 		year: "2016",
-		rated: "N/A",
 		released: "21 Dec 2016",
-		runtime: "N/A",
 		genre: "Action, Adventure, Fantasy",
 		director: "Justin Kurzel",
 		writer:
@@ -483,15 +428,10 @@ export const movies: Movie[] = [
 		plot: "When Callum Lynch explores the memories of his ancestor Aguilar and gains the skills of a Master Assassin, he discovers he is a descendant of the secret Assassins society.",
 		language: "English",
 		country: "UK, France, USA, Hong Kong",
-		awards: "N/A",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTU2MTQwMjU1OF5BMl5BanBnXkFtZTgwMDA5NjU5ODE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "N/A",
-		imdbVotes: "N/A",
 		imdbID: "tt2094766",
 		type: "movie",
-		response: "True",
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BN2EyYzgyOWEtNTY2NS00NjRjLWJiNDYtMWViMjg5MWZjYjgzXkEyXkFqcGdeQXVyNjUwNzk3NDc@._V1_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMTYwOWYzOTctOTc4My00ZmJkLTgzMTctMmUxNDI5ODQzYzNjXkEyXkFqcGdeQXVyNDAyODU1Njc@._V1_SX1500_CR0,0,1500,999_AL_.jpg",
@@ -500,31 +440,24 @@ export const movies: Movie[] = [
 		],
 	},
 	{
-		id: uuidv4(),
-
+		id: "37e14412-3ebf-45a4-9c1c-11e3a17e1a47",
 		comingSoon: true,
 		title: "Luke Cage",
 		year: "2016–",
 		rated: "TV-MA",
 		released: "30 Sep 2016",
-		runtime: "55 min",
+		runtime: 55,
 		genre: "Action, Crime, Drama",
-		director: "N/A",
 		writer: "Cheo Hodari Coker",
 		actors: "Mahershala Ali, Mike Colter, Frankie Faison, Erik LaRay Harvey",
 		plot: "Given superstrength and durability by a sabotaged experiment, a wrongly accused man escapes prison to become a superhero for hire.",
 		language: "English",
 		country: "USA",
-		awards: "N/A",
 		poster:
 			"http://ia.media-imdb.com/images/M/MV5BMTcyMzc1MjI5MF5BMl5BanBnXkFtZTgwMzE4ODY2OTE@._V1_SX300.jpg",
-		metascore: "N/A",
-		imdbRating: "N/A",
-		imdbVotes: "N/A",
 		imdbID: "tt3322314",
 		type: "series",
-		totalSeasons: "1",
-		response: "True",
+		totalSeasons: 1,
 		images: [
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjMxNjc1NjI0NV5BMl5BanBnXkFtZTgwNzA0NzY0ODE@._V1_SY1000_CR0,0,1497,1000_AL_.jpg",
 			"https://images-na.ssl-images-amazon.com/images/M/MV5BMjI1MDg3NjY2OF5BMl5BanBnXkFtZTgwNDE1NDU4OTE@._V1_SY1000_CR0,0,1497,1000_AL_.jpg",
@@ -540,26 +473,25 @@ export type Movie = {
 	comingSoon?: boolean;
 	title: string;
 	year: string;
-	rated: string;
-	released: string;
-	runtime: string;
+	rated?: string;
+	released?: string;
+	runtime?: number;
 	genre: string;
-	director: string;
+	director?: string;
 	writer: string;
 	actors: string;
 	plot: string;
 	language: string;
 	country: string;
-	awards: string;
+	awards?: string;
 	poster: string;
-	metascore: string;
-	imdbRating: string;
-	imdbVotes: string;
+	metascore?: number;
+	imdbRating?: number;
+	imdbVotes?: number;
 	imdbID: string;
-	type: string;
-	totalSeasons?: string;
-	response: string;
+	type: MovieType;
+	totalSeasons?: number
 	images: string[];
 };
 
-export type Movies = Movie[];
+export type MovieType = "movie" | "series";
