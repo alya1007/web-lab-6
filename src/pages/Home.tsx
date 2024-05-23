@@ -3,6 +3,7 @@ import Genres from "@/components/genres/Genres";
 import HotSection from "@/components/hot/HotSection";
 import LandingCarousel from "@/components/landing/LandingCarousel";
 import LandingStatistics from "@/components/landing/LandingStatistics";
+import RecommendedSection from "@/components/recommended/RecommendedSection";
 
 const Home = () => {
 	return (
@@ -12,6 +13,7 @@ const Home = () => {
 			<Genres />
 			<FilterBar />
 			<HotSection />
+			<RecommendedSection />
 		</>
 	);
 };
