@@ -8,7 +8,7 @@ import posterPlaceholder from "@/assets/moviePosterPlaceholder.jpg";
 const RecommendedSection = () => {
 	const hotMovies: Movie[] = useHotMovies();
 	const [recommendedMovies, setRecommendedMovies] = useState<Movie[]>([]);
-	const bottomPanelFirstMovie = hotMovies[0];
+	const bottomPanelFirstMovie = hotMovies[0] || {};
 	const [bottomPanelSecondMovie, setBottomPanelSecondMovie] = useState<Movie>();
 
 	useEffect(() => {
@@ -67,7 +67,7 @@ const RecommendedSection = () => {
 					customButtonGroup={<CarouselArrows />}
 				>
 					{recommendedMovies.map((movie) => (
-						<div>
+						<div key={movie.id}>
 							<a
 								key={movie.id}
 								className="bg-cover bg-no-repeat h-56 m-5 rounded-lg p-3 flex flex-col justify-between"
@@ -85,9 +85,58 @@ const RecommendedSection = () => {
 					))}
 				</Carousel>
 			</div>
-			<div className="flex">
-				<div></div>
-			</div>
+			{hotMovies.length > 0 && (
+				<div className="flex flex-col md:flex-row w-full">
+					<a
+						className="bg-cover bg-no-repeat h-72 m-5 rounded-lg p-3 flex flex-col justify-between"
+						style={{
+							backgroundImage: `url('${
+								bottomPanelFirstMovie.images
+									? bottomPanelFirstMovie.images[0]
+									: posterPlaceholder
+							}')`,
+						}}
+						href="#"
+					>
+						<div className="p-5 md:p-10 flex flex-col justify-between h-full">
+							<div>
+								<h1 className="text-xl font-medium text-white">
+									{bottomPanelFirstMovie?.title}
+								</h1>
+								<h3 className="text-sm font-regular text-white/50">
+									{bottomPanelFirstMovie?.released}
+								</h3>
+							</div>
+							<p className="text-[0.65rem] mt-10 md:mt-0 md:text-sm font-regular text-white/50 w-full md:w-3/5">
+								{bottomPanelFirstMovie?.plot}
+							</p>
+						</div>
+					</a>
+					<a
+						className="bg-cover bg-no-repeat h-72 m-5 rounded-lg p-3 flex flex-col justify-between"
+						style={{
+							backgroundImage: `url('${
+								bottomPanelSecondMovie?.poster || posterPlaceholder
+							}')`,
+						}}
+						href="#"
+					>
+						<div className="flex h-full justify-between flex-col p-3 md:p-6">
+							<div className="flex w-full justify-between md:flex-col xl:flex-row">
+								<h3 className="text-sm font-regular text-white/80">
+									{bottomPanelSecondMovie?.released}
+								</h3>
+								<h3 className="text-sm font-regular text-white/80">
+									{bottomPanelSecondMovie?.totalSeasons} seasons
+								</h3>
+							</div>
+							<h1 className="text-xl font-medium w-full mt-16 md:mt-0 xl:w-1/2 text-white">
+								{bottomPanelSecondMovie?.title}
+							</h1>
+						</div>
+					</a>
+				</div>
+			)}
 		</div>
 	);
 };

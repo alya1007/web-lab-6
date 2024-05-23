@@ -924,7 +924,7 @@ export const movies: Movie[] = [
 		country: "USA, UK",
 		poster:
 			"https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_.jpg",
-		imdbRating: 8.0,
+		imdbRating: 10.0,
 		imdbVotes: 487158,
 		imdbID: "tt15398776",
 		type: "movie",
