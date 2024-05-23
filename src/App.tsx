@@ -18,7 +18,7 @@ function App() {
 
 	return (
 		<HotMoviesProvider>
-			<BrowserRouter>
+			<BrowserRouter basename="web-lab-6">
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />}>
