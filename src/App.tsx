@@ -5,6 +5,7 @@ import { genres } from "./data/genres";
 import filters from "./data/filters";
 import Home from "./pages/Home";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HotMoviesProvider } from "./components/context/HotMoviesContext";
 
 function App() {
 	localStorage.setItem("movies", JSON.stringify(movies));
@@ -16,16 +17,18 @@ function App() {
 	localStorage.setItem("filters", JSON.stringify(filters));
 
 	return (
-		<BrowserRouter>
-			<Navbar />
-			<Routes>
-				<Route path="/" element={<Home />}>
-					<Route index element={<Home />} />
-					<Route path="movies" element={<Home />} />
-					<Route path="tv-shows" element={<Home />} />
-				</Route>
-			</Routes>
-		</BrowserRouter>
+		<HotMoviesProvider>
+			<BrowserRouter>
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />}>
+						<Route index element={<Home />} />
+						<Route path="movies" element={<Home />} />
+						<Route path="tv-shows" element={<Home />} />
+					</Route>
+				</Routes>
+			</BrowserRouter>
+		</HotMoviesProvider>
 	);
 }
 

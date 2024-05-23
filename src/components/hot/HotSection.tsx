@@ -1,28 +1,11 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CarouselArrows from "./CarouselArrows";
-import { Movie } from "@/data/movies";
-import { useEffect, useState } from "react";
+import { useHotMovies } from "@/lib/hooks/useHotMovies";
 import MovieCard from "./MovieCard";
 
 const HotSection = () => {
-	const [hotMovies, setHotMovies] = useState<Movie[]>([]);
-
-	useEffect(() => {
-		const storedMovies = localStorage.getItem("movies");
-		if (storedMovies) {
-			try {
-				const movies: Movie[] = JSON.parse(storedMovies);
-				const hotMovies = movies
-					.filter((movie) => movie.type === "movie")
-					.sort((a, b) => parseInt(b.year) - parseInt(a.year))
-					.slice(0, 7);
-				setHotMovies(hotMovies);
-			} catch (error) {
-				console.error("Error parsing movies from localStorage", error);
-			}
-		}
-	}, []);
+	const hotMovies = useHotMovies();
 
 	const responsive = {
 		superLargeDesktop: {
