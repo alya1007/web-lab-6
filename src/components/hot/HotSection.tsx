@@ -1,6 +1,6 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import CarouselArrows from "./CarouselArrows";
+import CarouselArrows from "../ui/CarouselArrows";
 import { useHotMovies } from "@/lib/hooks/useHotMovies";
 import MovieCard from "./MovieCard";
 
