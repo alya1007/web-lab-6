@@ -1,4 +1,5 @@
 import FilterBar from "@/components/filter/FiltersBar";
+import Footer from "@/components/footer/Footer";
 import Genres from "@/components/genres/Genres";
 import HotSection from "@/components/hot/HotSection";
 import LandingCarousel from "@/components/landing/LandingCarousel";
@@ -14,6 +15,7 @@ const Home = () => {
 			<FilterBar />
 			<HotSection />
 			<RecommendedSection />
+			<Footer />
 		</>
 	);
 };
